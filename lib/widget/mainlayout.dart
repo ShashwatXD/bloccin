@@ -23,7 +23,7 @@ class MainLayout extends StatelessWidget {
             return Text(pageTitles[state] ?? "BlocBase");
           },
         ),
-        backgroundColor: Colors.blueGrey.shade700,
+        backgroundColor: const Color.fromARGB(255, 118, 150, 164),
         foregroundColor: Colors.white,
       ),
       drawer: Drawer(

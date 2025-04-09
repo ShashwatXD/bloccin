@@ -5,35 +5,42 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.handshake, size: 80, color: Colors.blueGrey.shade700),
-            const SizedBox(height: 20),
-            Text(
-              "Welcome to BlocBase 🧱",
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-                color: Colors.blueGrey.shade800,
-              ),
-              textAlign: TextAlign.center,
+    return Scaffold(
+      body: Center(child:
+      Column(
+          mainAxisSize: MainAxisSize.min,
+        children: [
+             Image.asset(
+              'assets/images/blocbase_logo.png',
+              width: 250, 
+             opacity: AlwaysStoppedAnimation(0.79)
             ),
-            const SizedBox(height: 12),
-            Text(
-              "Start by selecting a section from the menu.\nUse the top-left drawer ☰ to explore products, fill a form, or play some music!",
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.blueGrey.shade600,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
-    );
+          
+                Text(
+                  "Welcome to BlocBase 🧱",
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 12),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                  child: Text(
+                    "Explore amazing features using the menu ☰",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.blueGrey,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(height: 20)
+                
+        ])));
+            
+         
   }
 }
