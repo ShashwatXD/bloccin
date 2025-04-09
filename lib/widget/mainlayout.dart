@@ -1,4 +1,5 @@
 import 'package:blocbase/bloc/navigation_cubit.dart';
+import 'package:blocbase/screens/form_screen.dart';
 import 'package:blocbase/screens/productscreen.dart';
 import 'package:blocbase/screens/welcomescreen.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class MainLayout extends StatelessWidget {
             case 0:
               return const ProductScreen(showAppBar: false);
             case 1:
-              return const Center(child: Text("Form Screen"));
+              return  const Center(child:Text("ok"));
             case 2:
               return const Center(child: Text("Music Screen"));
             default:

@@ -1,6 +1,8 @@
 import 'package:blocbase/screens/firstpage.dart';
 import 'package:blocbase/bloc/navigation_cubit.dart';
+import 'package:blocbase/screens/form_screen.dart';
 import 'package:blocbase/screens/product_detail.dart';
+import 'package:blocbase/screens/welcomescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,11 +28,13 @@ class MyApp extends StatelessWidget {
         
         useMaterial3: true,
       ),
-      home: const FirstScreen(),
-//       routes: {
-//   '/detail': (context) => const ProductDetailScreen(),
-// }
+      home: const WelcomeScreen(),
+      routes: {
+  '/detail': (context) => const ProductDetailScreen(),
+}
     )
     ;
   }
 }
+
+

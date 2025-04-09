@@ -1,5 +1,6 @@
 //bloc for product api
 import 'dart:convert';
+import 'package:blocbase/api/api.dart';
 import 'package:blocbase/models/productmodel.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
@@ -32,14 +33,14 @@ class ProductError extends ProductState {
 
 
 class ProductBloc extends Bloc<ProductEvent, ProductState> {
-  List<Product> _allProducts = []; // Keep all fetched data here
+  List<Product> _allProducts = [];
 
   ProductBloc() : super(ProductInitial()) {
     on<FetchProducts>((event, emit) async {
       emit(ProductLoading());
       try {
         final response =
-            await http.get(Uri.parse('https://fakestoreapi.com/products'));
+            await http.get(Uri.parse(globalapi));
         final data = json.decode(response.body) as List;
         final products = data.map((json) => Product.fromJson(json)).toList();
         _allProducts = products;
