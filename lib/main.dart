@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         
         useMaterial3: true,
       ),
-      home: const WelcomeScreen(),
+      home: const FirstScreen(),
       routes: {
   '/detail': (context) => const ProductDetailScreen(),
 }
