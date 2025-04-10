@@ -63,7 +63,6 @@ class FormDetailsPage extends StatelessWidget {
     );
   }
 
-  // Helper function to display each detail
   Widget _buildDetailText(String label, String value) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12.0),
