@@ -84,7 +84,7 @@ class ProductScreen extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Expanded(
-                                    flex: 3,
+                                    flex: 2,
                                     child: ClipRRect(
                                       borderRadius: const BorderRadius.vertical(
                                           top: Radius.circular(15)),

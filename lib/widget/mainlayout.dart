@@ -19,7 +19,7 @@ class MainLayout extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:Color.fromARGB(255, 53, 160, 156),
+        backgroundColor:Colors.blueGrey,
         title: BlocBuilder<NavigationCubit, int>(
           builder: (context, state) {
             return Text(pageTitles[state] ?? "BlocBase");

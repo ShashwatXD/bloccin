@@ -13,7 +13,7 @@ class WelcomeScreen extends StatelessWidget {
              Image.asset(
               'assets/images/blocbase_logo.png',
               width: 250, 
-             opacity: AlwaysStoppedAnimation(0.79)
+             opacity: AlwaysStoppedAnimation(0.6)
             ),
           
                 Text(
