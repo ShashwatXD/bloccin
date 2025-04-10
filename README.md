@@ -88,7 +88,7 @@ cd blocbase
 ```
 ###2. Install Dependencies
 ```bash
-Run this command to install the dependencies:
+Run flutter pub get
 ```
 ### 3.Run the App
 ```bash
