@@ -83,8 +83,9 @@ The app's workflow consists of three main BLoCs managing their respective functi
 Clone the repository with:
 
 ```bash
-git clone https://github.com/ShashwatXD/bloccin
 cd blocbase
+git clone https://github.com/ShashwatXD/bloccin
+
 ```
 ###2. Install Dependencies
 ```bash
