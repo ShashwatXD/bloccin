@@ -92,6 +92,6 @@ Run this command to install the dependencies:
 ```bash
 flutter run
 ```
-###Conclusion-
+### **Conclusion-**
 This app demonstrates the use of the BLoC pattern for managing state in Flutter. By separating UI and business logic, the app remains scalable, maintainable, and easy to expand.
 
