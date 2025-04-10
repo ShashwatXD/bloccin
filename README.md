@@ -1,3 +1,5 @@
+```mermaid
+
 graph TD;
     A[MainLayout Widget] --> B[Product BLoC];
     A --> C[Form BLoC];
