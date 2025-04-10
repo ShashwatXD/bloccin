@@ -35,8 +35,6 @@ graph TD;
     L --> N[API Call for Form Details];
     M --> O[Display Product Details];
     N --> P[Display Form Details];
-    O --> Q[Product Screen];
-    P --> R[Form Screen];
 ```
 ## **App Workflow**
 The app's workflow consists of three main BLoCs managing their respective functionalities:
