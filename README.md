@@ -63,6 +63,7 @@ The app's workflow consists of three main BLoCs managing their respective functi
 ## **How the BLoC Pattern Works**
 
 ### **Product BLoC**
+
 - The **Product BLoC** fetches data when the user navigates to the **Product Screen**.
 - It triggers an API call to get the product details and displays them.
 - The **Product Model** holds the product data and is used by the BLoC to manage the state.
@@ -78,15 +79,17 @@ The app's workflow consists of three main BLoCs managing their respective functi
 ## How to Run the App
 
 ### 1. Clone the Repository
+
 Clone the repository with:
 
 ```bash
-git clone <repo-url>
-cd <project-directory>
+cd blocbase
+git clone https://github.com/ShashwatXD/bloccin
+
 ```
 ###2. Install Dependencies
 ```bash
-Run this command to install the dependencies:
+ flutter pub get
 ```
 ### 3.Run the App
 ```bash
