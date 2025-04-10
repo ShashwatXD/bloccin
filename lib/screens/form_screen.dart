@@ -112,18 +112,19 @@ class FormPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 10,),
-                    
                     _buildTextField(
-                      countryController, 
-                      'Country',
+                      cityController, 
+                      'City',
+                    
                     ),
                     _buildTextField(
                       stateController, 
                       'State',
                     ),
                     _buildTextField(
-                      cityController, 
-                      'City',
+                      countryController, 
+                      'Country',
+                    
                     ),
                     SizedBox(height: 20),
                     Container(

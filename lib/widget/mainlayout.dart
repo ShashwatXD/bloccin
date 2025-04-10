@@ -1,5 +1,6 @@
 import 'package:blocbase/bloc/navigation_cubit.dart';
 import 'package:blocbase/screens/form_screen.dart';
+import 'package:blocbase/screens/musicscreen.dart';
 import 'package:blocbase/screens/productscreen.dart';
 import 'package:blocbase/screens/welcomescreen.dart';
 import 'package:flutter/material.dart';
@@ -18,15 +19,16 @@ class MainLayout extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor:Color.fromARGB(255, 53, 160, 156),
         title: BlocBuilder<NavigationCubit, int>(
           builder: (context, state) {
             return Text(pageTitles[state] ?? "BlocBase");
           },
         ),
-        backgroundColor: const Color.fromARGB(255, 118, 150, 164),
         foregroundColor: Colors.white,
       ),
       drawer: Drawer(
+        backgroundColor: Color.fromARGB(255, 242, 254, 253),
         child: ListView(
           children: [
             const DrawerHeader(
@@ -69,7 +71,7 @@ class MainLayout extends StatelessWidget {
             case 1:
               return   FormPage();
             case 2:
-              return const Center(child: Text("Music Screen"));
+              return  MusicScreen();
             default:
               return const WelcomeScreen();
           }
