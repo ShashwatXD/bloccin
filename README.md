@@ -1,3 +1,6 @@
+
+
+
 # Flutter App Architecture & Workflow
 
 ## **Overview**
@@ -12,6 +15,29 @@ This Flutter app is designed using the **BLoC** (Business Logic Component) patte
 - **API Integration**: API calls are made to fetch product details and form data.
 - **Modular Architecture**: Each feature (product, form, music) is decoupled, making the app scalable and maintainable.
 
+## **Workflow Diagram**
+
+Here’s the **Mermaid** flowchart illustrating the app's workflow:
+```mermaid
+graph TD;
+    A[MainLayout Widget] --> B[Product BLoC];
+    A --> C[Form BLoC];
+    A --> D[Music BLoC];
+    B --> E[Product Model];
+    C --> F[Form Model];
+    D --> G[Music Model];
+    B --> H[Product Screen];
+    C --> I[Form Screen];
+    D --> J[Audio Player Screen];
+    H --> K[Product Details];
+    I --> L[Form Details];
+    K --> M[API Call for Product Details];
+    L --> N[API Call for Form Details];
+    M --> O[Display Product Details];
+    N --> P[Display Form Details];
+    O --> Q[Product Screen];
+    P --> R[Form Screen];
+```
 ## **App Workflow**
 The app's workflow consists of three main BLoCs managing their respective functionalities:
 
@@ -34,30 +60,6 @@ The app's workflow consists of three main BLoCs managing their respective functi
 - Manages the **Music Model** to handle play/pause, volume, and track information.
 - Displays the **Audio Player Screen** for the user to control the music.
 
-
-
-```mermaid
-
-graph TD;
-    A[MainLayout Widget] --> B[Product BLoC];
-    A --> C[Form BLoC];
-    A --> D[Music BLoC];
-    B --> E[Product Model];
-    C --> F[Form Model];
-    D --> G[Music Model];
-    B --> H[Product Screen];
-    C --> I[Form Screen];
-    D --> J[Audio Player Screen];
-    H --> K[Product Details];
-    I --> L[Form Details];
-    K --> M[API Call for Product Details];
-    L --> N[API Call for Form Details];
-    M --> O[Display Product Details];
-    N --> P[Display Form Details];
-    O --> Q[Product Screen];
-    P --> R[Form Screen];
-
-
 ## **How the BLoC Pattern Works**
 
 ### **Product BLoC**
@@ -72,3 +74,24 @@ graph TD;
 ### **Music BLoC**
 - The **Music BLoC** handles the playback functionality, including play/pause and volume control.
 - The user interacts with the **Audio Player Screen**, which communicates with the **Music Model** to update the playback state.
+
+## How to Run the App
+
+### 1. Clone the Repository
+Clone the repository with:
+
+```bash
+git clone https://github.com/ShashwatXD/bloccin/
+cd blocbase
+```
+###2. Install Dependencies
+```bash
+Run this command to install the dependencies:
+```
+### 3.Run the App
+```bash
+flutter run
+```
+### **Conclusion-**
+This app demonstrates the use of the BLoC pattern for managing state in Flutter. By separating UI and business logic, the app remains scalable, maintainable, and easy to expand.
+
